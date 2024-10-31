@@ -1,0 +1,314 @@
+{
+  "quizes": [
+    {
+      "nome": "HTML",
+      "icone": "imagens/icon-html.svg",
+      "perguntas": [
+        {
+          "pergunta": "O que significa  a sigla HTML?",
+          "opcoes": [
+            "Hyper Trainer Marking Language",
+            "Hyper Text Marketing Language",
+            "Hyper Text Markup Language",
+            "Hyper Text Markup Leveler"
+          ],
+          "resposta": "Hyper Text Markup Language"
+        },
+        {
+          "pergunta": "Qual das alternativas abaixo é a estrutura correta em um documento HTML?",
+          "opcoes": [
+            "<html><head></head><body></body></html>",
+            "<head><html></html><body></body></head>",
+            "<body><head></head><html></html></body>",
+            "<html><body></body><head></head></html>"
+          ],
+          "resposta": "<html><head></head><body></body></html>"
+        },
+        {
+          "pergunta": "Qual elemento HTML é usado para definir o título de um documento?",
+          "opcoes": [
+            "<head>",
+            "<title>",
+            "<header>",
+            "<top>"
+          ],
+          "resposta": "<title>"
+        },
+        {
+          "pergunta": "Qual é o propósito da tag <body> no HTML?",
+          "opcoes": [
+            "Definir o cabeçalho do documento",
+            "Contér todo o conteúdo do site, como textos, imagens e links",
+            "Definir o conteúdo principal de um documento HTML",
+            "Especificar o corpo do conteúdo no HTML"
+          ],
+          "resposta": "Contér todo o conteúdo do site, como textos, imagens e links"
+        },
+        {
+          "pergunta": "Qual tag HTML é usada para criar um hiper link?",
+          "opcoes": [
+            "<hyperlink>",
+            "<link>",
+            "<a>",
+            "<href>"
+          ],
+          "resposta": "<a>"
+        },
+        {
+          "pergunta": "Qual tag é usada para colocar imagens no HTML?",
+          "opcoes": [
+            "<image>",
+            "<pic>",
+            "<src>",
+            "<img>"
+          ],
+          "resposta": "<img>"
+        },
+        {
+          "pergunta": "Qual elemento HTML é usado para definir uma linha horizontal na página?",
+          "opcoes": [
+            "<line>",
+            "<br>",
+            "<hr>",
+            "<divider>"
+          ],
+          "resposta": "<hr>"
+        },
+        {
+          "pergunta": "Qual tag HTML é usada para criar uma lista ordenada?",
+          "opcoes": [
+            "<ol>",
+            "<ul>",
+            "<list>",
+            "<li>"
+          ],
+          "resposta": "<ol>"
+        },
+        {
+          "pergunta": "O que a tag <br> faz?",
+          "opcoes": [
+            "Quebra um texto em duas seções",
+            "Cria um texto em negrito",
+            "Quebra a linha",
+            "Adiciona uma linha em uma tabela"
+          ],
+          "resposta": "Quebra a linha"
+        },
+        {
+          "pergunta": "Em HTML, o que a tag <fieldset> faz?",
+          "opcoes": [
+            "É usado para agrupar dados relacionados em um formulário",
+            "Dá um tamanho fixo para um campo",
+            "Valida automaticamente os campos sem um formulário",
+            "Esconde os campos em um formulário"
+          ],
+          "resposta": "É usado para agrupar dados relacionados em um formulário"
+        }
+      ]
+    },
+    
+    {
+      "nome": "CSS",
+      "icone": "imagens/icon-css.svg",
+      "perguntas": [
+        {
+          "pergunta": "O que significa a sigla CSS?",
+          "opcoes": [
+            "Colorful Style Sheets",
+            "Computer Style Sheets",
+            "Cascading Style Sheets",
+            "Creative Style Sheets"
+          ],
+          "resposta": "Cascading Style Sheets"
+        },
+        {
+          "pergunta": "Qual atributo HTML é usado para definir estilos inline?",
+          "opcoes": [
+            "class",
+            "styles",
+            "style",
+            "font-style"
+          ],
+          "resposta": "style"
+        },
+        {
+          "pergunta": "Como voce coloca comentários em um arquivo CSS?",
+          "opcoes": [
+            "// Comentário //",
+            "/* Comentário */",
+            "-- Comentário --",
+            "<!-- Comentário -->"
+          ],
+          "resposta": "/* Comentário */"
+        },
+        {
+          "pergunta": "Qual propriedade é usada para definir a cor de fundo de um elemento?",
+          "opcoes": [
+            "color",
+            "bgcolor",
+            "background",
+            "background-color"
+          ],
+          "resposta": "background-color"
+        },
+        {
+          "pergunta": "Como voce aplica um estilo para todos os elementos <p>?",
+          "opcoes": [
+            "p { }",
+            ".p { }",
+            "#p { }",
+            "all.p { }"
+          ],
+          "resposta": "p { }"
+        },
+        {
+          "pergunta": "Qual propriedade é usada para definir a fonte de um elemento?",
+          "opcoes": [
+            "font-style",
+            "text-style",
+            "font-family",
+            "typeface"
+          ],
+          "resposta": "font-family"
+        },
+        {
+          "pergunta": "Como voce faria para todas as palavras em um texto começarem com letra maiúscula?",
+          "opcoes": [
+            "text-transform: capitalize",
+            "text-transform: uppercase",
+            "font-style: capital",
+            "font-transform: capitalize"
+          ],
+          "resposta": "text-transform: capitalize"
+        },
+        {
+          "pergunta": "Como selecionar um elemento com a classe 'header'?",
+          "opcoes": [
+            "header",
+            "#header",
+            ".header",
+            "*header"
+          ],
+          "resposta": ".header"
+        },
+        {
+          "pergunta": "Qual é o valor padrão da propriedade 'position'?",
+          "opcoes": [
+            "relative",
+            "fixed",
+            "static",
+            "absolute"
+          ],
+          "resposta": "static"
+        },
+        {
+          "pergunta": "Qual é o propósito da propriedade 'z-index' em CSS?",
+          "opcoes": [
+            "Contar o número de elementos",
+            "Especificar a ampliação de um elemento",
+            "Especificar a ordem da camada de um elemento",
+            "Criar um efeito de zoom"
+          ],
+          "resposta": "Especificar a ordem da camada de um elemento"
+        },
+      ]
+    },
+    
+    {
+      "nome": "JS",
+      "icone": "imagens/icon-js.svg",
+      "perguntas": [
+        {
+          "pergunta": "Qual é a forma correta de criar um 'Olá, Mundo' em uma caixa de alerta?",
+          "opcoes": [
+            "alertBox('Olá, Mundo!')",
+            "msg('Olá, Mundo')",
+            "alert('Olá, Mundo')",
+            "msgBox('Olá, Mundo')"
+          ],
+          "resposta": "alert('Olá, Mundo')"
+        },
+        {
+          "pergunta": "Qual é a forma correta de chamar uma função com o nome 'myFunction'?",
+          "opcoes": [
+            "call function myFunction()",
+            "call myFunction()",
+            "myFunction()",
+            "call myFunction()"
+          ],
+          "resposta": "myFunction()"
+        },
+        {
+          "pergunta": "Qual é a sintaxe certa de um IF?",
+          "opcoes": [
+            "if n = 5 then",
+            "if (n == 5)",
+            "if n == 5",
+            "if n = 5"
+          ],
+          "resposta": "if (n == 5)"
+        },
+        {
+          "pergunta": "Qual é a sintaxe certa para executar um código se 'n' NÃO for igual 5?",
+          "opcoes": [
+            "if (n <> 5)",
+            "if n != 5 then",
+            "if (n != 5)",
+            "if (n not == 5)"
+          ],
+          "resposta": "if (n != 5)"
+        },
+        {
+          "pergunta": "Como iniciar um loop FOR?",
+          "opcoes": [
+            "for (i = 1; i <= 5)",
+            "for i = 1 to 5",
+            "for (i <= 5; i++)",
+            "for (i = 1; i <= 5; i++)"
+          ],
+          "resposta": "for (i = 1; i <= 5; i++)"
+        },
+        {
+          "pergunta": "Como adicionar um comentário em JavaScript?",
+          "opcoes": [
+            "'Comentário",
+            "// Comentário",
+            "<!-- Comentário -->",
+            "/* Comentário */"
+          ],
+          "resposta": "// Comentário"
+        },
+        {
+          "pergunta": "Qual é a forma certa de definir um Array?",
+          "opcoes": [
+            "var cores = (1: 'vermelho', 2: 'verde', 3: 'azul')",
+            "var cores = ['vermelho', 'verde', 'azul']",
+            "var cores = 'vermelho', 'verde', 'azul'",
+            "var cores = 1 = ('vermelho'), 2 = ('verde'), 3 = ('azul')"
+          ],
+          "resposta": "var cores = ['vermelho', 'verde', 'azul']"
+        },
+        {
+          "pergunta": "Como encontrar se o maior valor é x ou y?",
+          "opcoes": [
+            "Math.ceil(x, y)",
+            "top(x, y)",
+            "Math.max(x, y)",
+            "Math.highest(x, y)"
+          ],
+          "resposta": "Math.max(x, y)"
+        },
+        {
+          "pergunta": "Qual é a forma certa de definir um objeto em JavaScript?",
+          "opcoes": [
+            "var pessoa = {nome: 'Adolf', sobrenome: 'Hitler'}",
+            "var pessoa = {nome = 'Adolf', sobrenome = 'Hitler'}",
+            "var pessoa = (nome: 'Adolf', sobrenome: 'Hitler')",
+            "var pessoa = (nome = 'Adolf', sobrenome = 'Hitler')",
+          ],
+          "resposta": "var pessoa = {nome: 'Adolf', sobrenome: 'Hitler'}"
+        }
+      ]
+    }
+  ]
+}

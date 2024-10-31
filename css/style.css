@@ -1,0 +1,211 @@
+/* Fonte Rubik */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-html: #FFF1E9;
+  --bg-css: #E0FDEF;
+  --bg-javascript: #EBF0FF;
+}
+
+body[data-theme=light] {
+  --bg-color: #f8f9fa;
+  --font-color: #212529;
+  --item-color: #e8ebed;
+  --footer-bg: gray;
+}
+
+body[data-theme=dark] {
+  --bg-color: #212529;
+  --font-color: #f8f9fa;
+  --item-color: #49525c;
+  --footer-bg: #404040;
+}
+
+body {
+  font-family: "Rubik", Arial, Helvetiva, sans-serif;
+  margin: 20px;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  transition: all 0.3s ease;
+}
+
+#alterar-tema {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+#alterar-tema span.material-symbols-outlined {
+  margin: 5px;
+}
+#alterar-tema input {
+  display: none;
+}
+#alterar-tema #toggle {
+  display: block;
+  background-color: #A729F5;
+  width: 50px;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+#alterar-tema #toggle:before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.4s;
+}
+#alterar-tema input:checked + #toggle:before {
+  left: 50%;
+}
+
+main section.tema {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--item-color);
+  padding: 15px;
+  margin: 1em 0px;
+  transition: all 0.3s ease;
+}
+main section.tema:hover {
+  transform: translate(7px, -7px);
+}
+main h3 {
+  display: inline;
+  font-size: 1.5em;
+}
+main img {
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: white;
+  margin: 100px -20px -20px -20px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #d5d5d5;
+}
+
+/* ESTILOS DO QUIZ */
+#titulo-tema {
+  font-size: 1.6em;
+}
+#titulo-tema img {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.progress-bar {
+  background-color: #A729F5;
+}
+
+main#quiz {
+  margin-top: 3.5em;
+}
+main#quiz h6#questoes {
+  font-style: italic;
+  margin-bottom: 2em;
+}
+main#quiz section#opcoes {
+  margin-top: 1.5em;
+}
+main#quiz .opcao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--item-color);
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+main#quiz .opcao span#letra {
+  background-color: #d8d8d8;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #212529;
+  margin-right: 15px;
+}
+main#quiz .opcao img {
+  margin: 0;
+  padding: 0;
+}
+main#quiz .opcao:hover {
+  border: 2px solid #A729F5;
+}
+main#quiz .opcao:hover span#letra {
+  background-color: #dfb3fa;
+  color: #A729F5;
+}
+main#quiz .opcao.selecionado {
+  border: 2px solid #A729F5;
+}
+main#quiz .opcao.selecionado span#letra {
+  background-color: #A729F5;
+  color: #f8f9fa;
+}
+main#quiz .opcao.correto {
+  border: 2px solid #198754;
+}
+main#quiz .opcao.correto span#letra {
+  background-color: #198754;
+  color: #f8f9fa;
+}
+main#quiz .opcao.errado {
+  border: 2px solid #dc3545;
+}
+main#quiz .opcao.errado span#letra {
+  background-color: #dc3545;
+  color: white;
+}
+main#quiz button.btn {
+  background-color: #A729F5;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+main#quiz button.btn:hover {
+  border: 2px solid #A729F5;
+  background-color: #f8f9fa;
+  color: #A729F5;
+  outline: none;
+}
+main#quiz #erro img {
+  margin: 0;
+}
+main#quiz section#acertos {
+  background-color: var(--item-color);
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  margin: 10px auto;
+  text-align: center;
+}
+main#quiz section#acertos span {
+  font-size: 3.5em;
+}
+
+/*# sourceMappingURL=style.css.map */

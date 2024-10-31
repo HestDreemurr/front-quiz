@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+/* Fonte Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+// Bootstrap SCSS
+@import "../bootstrap-scss/functions";
+@import "../bootstrap-scss/mixins";
+@import "../bootstrap-scss/variables";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Variáveis
+$roxo: #A729F5;
+$roxo-claro: #dfb3fa;
+$branco: #f8f9fa;
+
+
+:root {
+  --bg-html: #FFF1E9;
+  --bg-css: #E0FDEF;
+  --bg-javascript: #EBF0FF;
+}
+
+
+body[data-theme="light"] {
+  --bg-color: #f8f9fa;
+  --font-color: #212529;
+  --item-color: #e8ebed;
+  --footer-bg: gray;
+}
+
+body[data-theme="dark"] {
+  --bg-color: #212529;
+  --font-color: #f8f9fa;
+  --item-color: #49525c;
+  --footer-bg: #404040;
+}
+
+body {
+  font-family: "Rubik", Arial, Helvetiva, sans-serif;
+  margin: 20px;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  transition: all .3s ease;
+}
+
+#alterar-tema {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  
+  span.material-symbols-outlined {
+    margin: 5px;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  #toggle {
+    display: block;
+    background-color: $roxo;
+    width: 50px;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  #toggle:before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left .4s;
+  }
+  
+  input:checked + #toggle:before {
+    left: 50%;
+  }
+}
+
+main {
+  section.tema {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--item-color);
+    padding: 15px;
+    margin: 1em 0px;
+    transition: all .3s ease;
+  }
+  
+  section.tema:hover {
+    transform: translate(7px, -7px);
+  }
+  
+  h3 {
+    display: inline;
+    font-size: 1.5em;
+  }
+  
+  img {
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 1em;
+  }
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: white;
+  margin: 100px -20px -20px -20px;
+  padding: 20px;
+  transition: all .3s ease;
+  
+  a {
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #d5d5d5;
+  }
+}
+
+
+/* ESTILOS DO QUIZ */
+
+#titulo-tema {
+  font-size: 1.6em;
+  
+  img {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+}
+
+.progress-bar {
+  background-color: $roxo;
+}
+
+main#quiz {
+  margin-top: 3.5em;
+  
+  h6#questoes {
+    font-style: italic;
+    margin-bottom: 2em;
+  }
+  
+  section#opcoes {
+    margin-top: 1.5em;
+  }
+  
+  .opcao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--item-color);
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    
+    span#letra {
+      background-color: #d8d8d8;
+      padding: 10px 15px;
+      border-radius: 10px;
+      color: #212529;
+      margin-right: 15px;
+    }
+    
+    img {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .opcao:hover {
+    border: 2px solid $roxo;
+    
+    span#letra {
+      background-color: $roxo-claro;
+      color: $roxo;
+    }
+  }
+  
+  .opcao.selecionado {
+    border: 2px solid $roxo;
+    
+    span#letra {
+      background-color: $roxo;
+      color: $branco;
+    }
+  }
+  
+  .opcao.correto {
+    border: 2px solid $success;
+    
+    span#letra {
+      background-color: $success;
+      color: $branco;
+    }
+  }
+  
+  .opcao.errado {
+    border: 2px solid $danger;
+    
+    span#letra {
+      background-color: $danger;
+      color: white;
+    }
+  }
+  
+  button.btn {
+    background-color: $roxo;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: $branco;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn:hover {
+    border: 2px solid $roxo;
+    background-color: $branco;
+    color: $roxo;
+    outline: none;
+  }
+  
+  #erro {
+    img {
+      margin: 0;
+    }
+  }
+  
+  section#acertos {
+    background-color: var(--item-color);
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    
+    span {
+      font-size: 3.5em;
+    }
+  }
+}

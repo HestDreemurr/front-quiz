@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front Quiz</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="light">
+  
+  <div id="alterar-tema">
+    <span class="material-symbols-outlined">light_mode</span>
+    <label>
+      <input type="checkbox">
+      <span id="toggle"></span>
+    </label>
+    <span class="material-symbols-outlined">dark_mode</span>
+  </div>
+  
+  <header class="mb-4">
+    <h1>Front Quiz</h1>
+    <h2 class="lead">Selecione um tema:</h2>
+  </header>
+  
+  <main>
+    <section class="tema shadow-sm">
+      <img src="imagens/icon-html.svg" alt="Ícone do HTML" style="background-color: var(--bg-html);">
+      <h3>HTML</h3>
+    </section>
+    
+    <section class="tema shadow-sm">
+      <img src="imagens/icon-css.svg" alt="Ícone do CSS" style="background-color: var(--bg-css);">
+      <h3>CSS</h3>
+    </section>
+    
+    <section class="tema shadow-sm">
+      <img src="imagens/icon-js.svg" alt="Ícone do JavaScript"
+      style="background-color: var(--bg-javascript);">
+      <h3>JavaScript</h3>
+    </section>
+  </main>
+  
+  <footer>
+    <h4 class="mb-4">Onde aprender essas tecnologias?</h4>
+    
+    <p>
+      <strong>HTML</strong> - <a href="https://www.w3schools.com/html/default.asp">W3Schools</a>
+    </p>
+    
+    <p>
+      <strong>CSS</strong> - <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">MDN Web Docs</a>
+    </p>
+    
+    <p>
+      <strong>JavaScript</strong> - <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">MDN Web Docs</a>
+    </p>
+  </footer>
+  
+  <script src="scripts/quizes.js"></script>
+  <script src="scripts/alterar-temas.js"></script>
+</body>
+</html>
