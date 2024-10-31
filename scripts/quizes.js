@@ -70,7 +70,12 @@ function prepararPerguntas() {
     let opcao = document.createElement("div")
     opcao.classList.add("opcao")
     
-    opcao.innerHTML = `<span id="letra">${letra}</span>`
+    opcao.innerHTML = `
+    <div>
+      <span id="letra">${letra}</span>
+      <span class="resposta"></span>
+    </div>
+    `
     
     opcao.addEventListener("click", () => {
       document.querySelectorAll(".opcao").forEach(opc => {
@@ -123,8 +128,7 @@ function fazerPerguntas(perguntas, index, acertos) {
     opcoes[i].classList.remove("selecionado")
     
     let resposta = opcoes[i].querySelector("span.resposta")
-    if (resposta) opcoes[i].removeChild(resposta)
-    opcoes[i].innerHTML += `<span class="resposta">${pergunta.options[i]}</span>`
+    resposta.innerText = pergunta.options[i]
   }
   
   let enviar = document.querySelector("button#enviar")
@@ -132,7 +136,7 @@ function fazerPerguntas(perguntas, index, acertos) {
     let erro = document.querySelector("p#erro")
     if (erro) document.querySelector("main").removeChild(erro)
     
-    let resposta = document.querySelector(".selecionado > span.resposta")
+    let resposta = document.querySelector(".selecionado  span.resposta")
     if (!resposta) {
       let erro = document.createElement("p")
       erro.id = "erro"
