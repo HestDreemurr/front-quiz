@@ -32,6 +32,7 @@ body {
   background-color: var(--bg-color);
   color: var(--font-color);
   transition: all 0.3s ease;
+  height: 100vh;
 }
 
 #alterar-tema {
@@ -206,6 +207,27 @@ main#quiz section#acertos {
 }
 main#quiz section#acertos span {
   font-size: 3.5em;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.5em;
+    margin: 0px 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "alt alt" "header main";
+    align-content: center;
+  }
+  #alterar-tema {
+    grid-area: alt;
+  }
+  header {
+    grid-area: header;
+    justify-self: center;
+  }
+  main {
+    grid-area: main;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

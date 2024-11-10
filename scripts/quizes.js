@@ -39,7 +39,6 @@ function prepararAmbiente(tema) {
   subtitulo.id = "titulo-tema"
   
   document.body.removeChild(document.querySelector("main"))
-  document.body.removeChild(document.querySelector("footer"))
 }
 
 function prepararPerguntas() {
